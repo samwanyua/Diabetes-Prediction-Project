@@ -32,8 +32,6 @@ The model is trained on the **Pima Indians Diabetes Dataset**, which includes he
 - Age
 
 
-
-
 ---
 
 ##  How It Works
