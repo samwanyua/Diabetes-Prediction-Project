@@ -52,7 +52,7 @@ This project demonstrates how machine learning can assist in early detection of 
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The model is trained on the **Pima Indians Diabetes Dataset**, which includes health-related variables such as:
 - Number of pregnancies
