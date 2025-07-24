@@ -36,6 +36,37 @@ The model is trained on the **Pima Indians Diabetes Dataset**, which includes he
 
 ---
 
+##  Visualizations
+
+Here are some visual insights from the dataset:
+
+###  1. Correlation Heatmap
+Shows how features relate to each other.
+![Correlation Heatmap](Notebooks/Images/feature_correlation_heatmap.png)
+
+---
+
+###  2. Diabetes Class Distribution
+Distribution of diabetic (1) vs non-diabetic (0) individuals.
+![Diabetes Distribution](Notebooks/Images/outcome_distibution.png)
+
+---
+
+###  3. Pairplot of Features
+Visualizes relationships between variables, colored by diabetes outcome.
+![Pairplot](Notebooks/Images/pairplots.png)
+
+---
+
+###  4. Scatterplot of BMI vs Outcome
+Comparing BMI vs Outcome
+![Scatterplots](Notebooks/Images/scatterplot_bmi_outcome.png)
+
+---
+### 5. Age distribution
+Age distribution by Diabetes Outcome
+![Histplot](Notebooks/Images/age_distribution.png)
+
 ##  How It Works
 
 1. Load and preprocess the dataset  
