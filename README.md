@@ -2,6 +2,8 @@
 
 A machine learning web app that predicts whether a person has diabetes or not, based on medical inputs. This project uses a **Support Vector Machine (SVM)** classifier for prediction and is deployed using **Streamlit**.
 
+ **Live Demo**: [Try the App](https://wanyua-diabete-prediction-system-v1.streamlit.app/#enter-the-following-health-metrics-to-predict-diabetes-risk)
+
 ---
 
 ##  Overview

@@ -15,7 +15,7 @@ def diabetes_prediction(input_data):
 
     prediction = loaded_model.predict(input_data_standardized)
 
-    print(prediction)
+    print(prediction) 
 
     if (prediction[0] == 0):
         return 'The person is not diabetic'
