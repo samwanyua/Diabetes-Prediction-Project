@@ -2,15 +2,18 @@ import numpy as np
 import pickle
 import streamlit as st
 
-loaded_model = pickle.load(open('./Notebooks/trained_model.sav', 'rb'))
+# loaded_model = pickle.load(open('./Notebooks/trained_model.sav', 'rb'))
+# Load scaler and model
+with open('./Notebooks/trained_model.sav', 'rb') as f:
+    loaded_scaler, loaded_model = pickle.load(f)
+
 
 def diabetes_prediction(input_data):
     # change the input data to numpy array
-    input_data_as_np_array= np.asarray(input_data)
+    input_data_as_np_array= np.asarray(input_data).reshape(1, -1)
+    input_data_standardized = loaded_scaler.transform(input_data_as_np_array)
 
-    # reshape the array
-    input_data_reshape = input_data_as_np_array.reshape(1,-1)
-    prediction = loaded_model.predict(input_data_reshape)
+    prediction = loaded_model.predict(input_data_standardized)
 
     print(prediction)
 
