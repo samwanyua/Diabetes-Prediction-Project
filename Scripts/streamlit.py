@@ -32,4 +32,13 @@ def main():
     DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function')
     Age=st.text_input('Age of the person')
 
+    # prediction
+    diagnosis = ''
+
+    if st.button('Diabetes Test Result'):
+        diagnosis = diabetes_prediction([Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin, BMI,DiabetesPedigreeFunction, Age])
+        
+
+
+
 
